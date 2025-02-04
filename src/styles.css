@@ -1,0 +1,109 @@
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif !;
+  background-color: #E3DFD7 !important;
+}
+
+
+/* Variables css */
+:root {
+
+  /* --colorUno: #e0e4f9;
+  --colorDos: #d0daf7;
+  --colorTres: #b0c1d8;
+  --colorCuatro: #4b6446;
+  --colorCinco: #153053;
+  --colorUnoRGB: 224, 228, 249;
+  --colorDosRGB: 208, 218, 247;
+  --colorTresRGB: 176, 193, 216;
+  --colorCuatroRGB: 75, 100, 70;
+  --colorCincoRGB: 21, 48, 83;
+  --colorTextoUno: #0f132e;
+  --colorTextoDos: #FFF; */
+  --colorUno: #0f132e;
+  --colorDos: #19274e;
+  --colorTres: #536d88;
+  --colorCuatro: #b49b85;
+  --colorCinco: #eac195;
+  
+  --colorUnoRGB: 15, 19, 46;
+  --colorDosRGB: 25, 39, 78;
+  --colorTresRGB: 83, 109, 136;
+  --colorCuatroRGB: 180, 155, 133;
+  --colorCincoRGB: 234, 193, 149;
+
+  
+  --colorTextoUno: #0f132e;
+  --colorTextoDos: #000;
+  --colorTextoTres: #F4F8FB;
+}
+
+.icon-angular{
+  background-image: url("src\assets\img\icon-angular.svg");
+}
+.icon-bootstrap{
+  background-image: url("src\assets\img\icon-bootstrap.svg");
+}
+.icon-chartjs{
+  background-image: url("src\assets\img\icon-chartjs.svg");
+}
+.icon-css3{
+  background-image: url("src\assets\img\icon-css3.svg");
+}
+.icon-excel{
+  background-image: url("src\assets\img\icon-excel.svg");
+}
+.icon-figma{
+  background-image: url("src\assets\img\icon-figma.svg");
+}
+.icon-git{
+  background-image: url("src\assets\img\icon-git.svg");
+}
+.icon-html{
+  background-image: url("src\assets\img\icon-html.svg");
+}
+.icon-javascript{
+  background-image: url("src\assets\img\icon-javascript.svg");
+}
+.icon-laravel{
+  background-image: url("src\assets\img\icon-laravel.svg");
+}
+.icon-mysql{
+  background-image: url("src\assets\img\icon-mysql.svg");
+}
+.icon-netsjs{
+  background-image: url("src\assets\img\icon-netsjs.svg");
+}
+.icon-nodejs{
+  background-image: url("src\assets\img\icon-nodejs.svg");
+}
+.icon-php{
+  background-image: url("src\assets\img\icon-php.svg");
+}
+.icon-react{
+  background-image: url("src\assets\img\icon-react.svg");
+}
+.icon-spring{
+  background-image: url("src\assets\img\icon-spring.svg");
+}
+.icon-trello{
+  background-image: url("src\assets\img\icon-trello.svg");
+}
+.icon-mongodb{
+  background-image: url("src\assets\img\icon-mongodb.svg");
+}
+
+.vista-icon-habilidades{
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

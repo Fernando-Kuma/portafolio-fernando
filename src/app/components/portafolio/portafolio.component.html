@@ -1,0 +1,210 @@
+  <header class="row m-0">
+    <div class="col-12 px-3 my-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#acercaDeMi">{{ 'menu.acercaDe' | translate}}</a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#experiencia">{{ 'menu.experiencia' | translate}}</a>
+              <a class="nav-link" href="#herramientas">{{ 'menu.herramientras' | translate}}</a>
+              <a class="nav-link" href="#proyectos">{{ 'menu.proyectos' | translate}}</a>
+              <a class="nav-link" href="#educacion">{{ 'menu.educacion' | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section id="acercaDeMi">
+    <div class="container-xl">
+      <div class="row" style="position: relative;">
+        <div class="col-5">
+          <p class="titulo">
+            {{ 'titulos.acercaDe' | translate}}
+          </p>
+          <p class="titulo-secundario">
+          {{ 'acercaDeMi.desarrollador' | translate}}
+          </p>
+          <p class="descripcion-titulo">{{ 'acercaDeMi.descripcion' | translate}}  
+          </p>
+        </div>
+        <div class="col-7" >
+          <img src="assets/img/8ae0d6ab-9b76-423d-ba21-5c3c48ca04c8 1.png" alt="" srcset="" style=" height: 100%; width: 100%; object-fit: none; object-position: top; border-radius: 20px;">
+        </div>
+        <div class="col-12" style="position: absolute;">
+          <img src="assets/img/fotouwu_4.png" alt="" srcset="" style="object-fit: none;
+          max-height: 500px;
+          width: inherit;
+          /* object-position: top; */
+          object-position: 20vw -20px;
+          margin-top: -25px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section id="separador">
+    <div class="container-xl pacman-section" style="min-height: 75px;">
+      <img src="assets/img/pacman.gif" alt="Pacman" id="pacman">
+      <div id="dots-container-xl"></div>
+    </div>
+  </section> -->
+  <section id="experiencia">
+    <div class="container-xl" style="margin-top: 85px;">
+      <div class="row">
+        <div class="col-12 titulo-seccion">
+          {{ 'titulos.experiencia' | translate}}
+        </div>
+        <div class="col-12 mt-3">
+          <div class="row m-0">
+            <div class="col-12 d-flex justify-content-center mb-3" *ngFor="let experiencia of listaExperiencia">
+              <div class="cuadro-experencia">
+                <div class="experencia-logo">
+                  <img [src]="experiencia.logo" alt="Empresa 1">
+                </div>
+                <div class="experencia-contenido">
+                  <div class="titulo-encargado mb-2">{{experiencia.encargo | translate}}</div>
+                  <p class="informacion-empresa">{{experiencia.empresa | translate}} - {{experiencia.fecha | translate}}</p>
+                  <span class="informacion-empresa">{{experiencia.tareas | translate}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="herramientas">
+    <div class="container-xl mt-2">
+      <div class="row">
+        <div class="col-12 titulo-seccion">
+          {{ 'titulos.herramientas' | translate}}
+        </div>
+        <div class="col-12 mt-3">
+          <div class="row">
+            <div class="col-sm-6 col-12" *ngFor="let desarrollo of listaDesarrollo">
+              <div class="row">
+                <div class="col-12 mt-3 titulo-secundario text-center">
+                  {{ desarrollo.titulo | translate }}
+                </div>
+                <div class="row">
+                  <div class="col-sm-3 col-4 mt-2" *ngFor="let lenguaje of desarrollo.lenguajes">
+                    <div class="cuadro-habilidad">
+                      <mat-icon class="vista-icon-habilidades" [ngClass]="lenguaje.icono"></mat-icon>
+                      <div class="titulo-habilidad">
+                        {{ lenguaje.titulo | translate }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-3 titulo-secundario text-center">
+              {{ 'titulos.habilidades' | translate }}
+            </div>
+            <div class="col-md-4 col-6" *ngFor="let habilidades of listaHabilidades">
+              <div class="cuadro-habilidad blandas">
+                <div class="titulo-habilidad">
+                  <i class="bi bi-filetype-html"></i>
+                  {{ habilidades.titulo | translate }}
+                </div>
+                <div class="descripcion-habilidad">
+                  {{ habilidades.descripcion | translate }}
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="proyectos">
+    <div class="container-xl mt-2">
+      <div class="row">
+        <div class="col-12 titulo-seccion">
+          {{ 'titulos.proyectos' | translate}}
+        </div>
+        <div class="col-12 mt-3">
+          <div class="row m-0">
+            <div class="col-4" *ngFor="let proyecto of listaProyectos">
+              <div class="cuadro-proyecto position-relative overflow-hidden"
+              data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Haz click para entrar al repositorio" (click)="detalleProyecto(proyecto)">
+                <img [src]="proyecto.fondo" [alt]="proyecto.titulo | translate" class="w-100">
+                <div class="informacion-proyecto position-absolute p-3">
+                  <p class="titulo-proyecto">
+                    <i class="bi bi-github"></i>
+                    {{ proyecto.titulo | translate}}
+                  </p>
+                  <p class="descripcion-proyecto">
+                    {{ proyecto.descripcion | translate}}
+                  </p>
+                  <div class="etiquetas-proyectos d-flex gap-2">
+                    <span class="etiqueta" *ngFor="let etiqueta of proyecto.etiquetas">{{etiqueta}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="educacion">
+    <div class="container-xl mt-2">
+      <div class="row">
+        <div class="col-12 titulo-seccion">
+          {{ 'titulos.educacion' | translate}}
+        </div>
+        <div class="col-12 mt-3">
+          <div class="row">
+            <div class="col-sm-6 col-12 mb-3" *ngFor="let titulos of listaTitulos">
+              <div class="cuadro-educacion">
+                <div class="educacion-logo">
+                  <img [src]="titulos.logo" alt="Empresa 1">
+                </div>
+                <div class="educacion-contenido">
+                  <div class="titulo-encargado mb-2">{{titulos.escuela | translate}}</div>
+                  <span class="informacion-empresa">{{titulos.titulo | translate}} - {{titulos.fecha | translate}}</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-12 mt-3 titulo-secundario text-center">
+              {{ 'titulos.cursos' | translate }}
+            </div>
+            <div class="col-md-3 col-sm-4 col-6" *ngFor="let cursos of listaCursos">
+              <div class="cuadro-cursos px-3 py-2">
+                <div class="titulo-curso d-flex justify-content-between">
+                  {{ cursos.escuela | translate }}
+                  <i class="bi bi-filetype-html"></i>
+                </div>
+                <div class="descripcion-curso text-center mt-3">
+                  {{ cursos.titulo | translate }}
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <footer class="articulo-2 py-4 mt-4">
+    <div class="container-xl">
+      <p class="float-end mb-1">
+        <a href="#header">Inicio</a>
+      </p>
+      <div class="d-flex justify-content-start mb-3">
+        <p class="me-3 mb-1"><i class="fa-brands fa-github"></i><a class="btn btn-link" href="https://github.com/Fernando-Kuma" target="_blank">Perfil GitHub</a></p>
+        <p class="mb-1"><i class="fa-brands fa-linkedin"></i><a class="btn btn-link" href="https://www.linkedin.com/in/fernando-enrique-galindo-jimenez-15677b234" target="_blank">Perfil Linkedin</a></p>
+      </div>
+      <p class="derecho-reservado">© Fernando Galindo -  <script>document.write(new Date().getFullYear());</script></p>
+    </div>
+  </footer>

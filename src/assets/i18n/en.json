@@ -1,0 +1,91 @@
+{
+  "menu": {
+    "acercaDe": "Acerca de",
+    "proyectos": "Proyectos",
+    "herramientras": "Herramientas",
+    "experiencia": "Experiencia",
+    "educacion": "Educación"
+  },
+  "acercaDeMi":{
+    "desarrollador": "Desarrollador FrontEnd",
+    "descripcion": "Desarrollador Frontend con más de 2 años de experiencia especializada en Angular, creando aplicaciones web innovadoras con un enfoque en experiencias de usuario excepcionales. Dominio en HTML5, CSS3, JavaScript, TypeScript y frameworks modernos. "
+  },
+  "titulos":{
+    "acercaDe": "Acerca de mi",
+    "proyectos": "Proyectos",
+    "herramientas": "Herramientas",
+    "experiencia": "Experiencia",
+    "educacion": "Educación"
+  },
+  "proyectos": [
+    {
+      "titulo": "Proyecto X",
+      "descripcion": "Aquí tienes una escala de colores que incluye las variantes desde claro a oscuro para las opciones primarias, secundarias, de éxito, advertencia y error. Para cada uno, te proporciono 5 tonos, desde el más claro hasta el más oscuro.",
+      "fondo": "assets/img/proyecto-x.png",
+      "etiquetas": ["HTML", "CSS"],
+      "link": ""
+    }
+  ],
+  "herramientas": {
+    "lenguajes": {
+      "front": {
+        "titulo": "",
+        "lenguajes": [
+          {
+            "titulo": "",
+            "icono": "",
+            "descripcion": ""
+          },
+          {
+            "titulo": "",
+            "icono": "",
+            "descripcion": ""
+          }
+        ]
+      },
+      "back": {
+        "titulo": "",
+        "lenguajes": []
+      },
+      "extras": {
+        "titulo": "",
+        "lenguajes": []
+      }
+    },
+    "habilidades":[
+      {
+        "titulo": "",
+        "icono": "",
+        "descripcion": ""
+      }
+    ]
+  },
+  "experiencia":[
+    {
+      "logo": "",
+      "encargo": "",
+      "empresa": "",
+      "fecha": "",
+      "tareas": "",
+      "descripcion": ""
+    }
+  ],
+  "educacion": {
+    "escuela":[
+      {
+        "logo": "",
+        "escuela": "",
+        "titulo": "",
+        "fecha": ""
+      }
+    ],
+    "certificaciones":[
+      {
+        "logo": "",
+        "escuela": "",
+        "titulo": "",
+        "fecha": ""
+      }
+    ]
+  }
+}

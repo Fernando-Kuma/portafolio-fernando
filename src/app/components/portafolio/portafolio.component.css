@@ -1,0 +1,323 @@
+
+
+
+
+.home::-webkit-scrollbar {
+  width: 10px;     /* Tamaño del scroll en vertical */
+  height: 15px;    /* Tamaño del scroll en horizontal */
+}
+
+.home::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.navbar{
+  background-color: #A7A7A7 !important;
+  border-radius: 4px;
+}
+
+.titulo{
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--colorTextoUno);
+}
+
+.titulo-secundario{
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--colorTextoUno);
+}
+
+.titulo-seccion{
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--colorTextoUno);
+  text-align: center;
+}
+
+.descripcion-titulo{
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--colorTextoUno);
+  white-space: break-spaces;
+  padding-right: 50px;
+}
+
+
+
+.articulo-2{
+  width: 100%;
+  min-height: 100px;
+  background-color: var(--colorTextoUno);
+}
+
+.articulo-2 h1{
+  color: var(--colorTextoUno);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.articulo-2 p{
+  color: var(--colorTextoUno);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.derecho-reservado{
+  color: var(--colorTextoUno);
+}
+
+/* Classes proyectos  */
+
+.cuadro-proyecto {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.cuadro-proyecto img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.cuadro-proyecto:hover img {
+  transform: scale(1.1);
+}
+
+.cuadro-proyecto:hover .informacion-proyecto {
+  opacity: 1;
+}
+
+.informacion-proyecto{
+  display: grid;
+  grid-template-rows: 75px auto 25px;
+  gap: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background-color: rgb(29, 33, 37, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+.titulo-proyecto{
+  color: var(--colorTextoTres);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.descripcion-proyecto{
+  color: var(--colorTextoTres);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.etiquetas-proyectos .etiqueta {
+  background-color: #A7A7A7;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--colorTextoUno);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* Classes herramientas  */
+
+.cuadro-habilidad{
+  width: 100%;
+  border-radius: 20px;
+  min-height: 80px;
+  overflow: hidden;
+  background-color: #a7a7a7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.cuadro-habilidad:hover{
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.titulo-habilidad{
+  color: var(--colorTextoTres);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.descripcion-habilidad{
+  color: var(--colorTextoTres);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cuadro-habilidad.blandas{
+  width: 100%;
+  border-radius: 16px;
+  min-height: 200px;
+  overflow: hidden;
+  background-color: #f4f1eb;
+  cursor: default !important;
+  box-shadow: none !important;
+}
+
+
+.cuadro-habilidad.blandas .titulo-habilidad{
+  color: var(--colorTextoUno);
+}
+
+.cuadro-habilidad.blandas .descripcion-habilidad{
+  color: var(--colorTextoUno);
+}
+
+
+/* Classes experiencia  */
+
+.cuadro-experencia{
+  display: flex;
+  align-items: center;
+  background: #f4f1eb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+.experencia-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+
+.experencia-contenido{
+  text-align: left;
+}
+
+.experencia-contenido .titulo-encargado {
+  color: var(--colorTextoUno);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.experencia-contenido .informacion-empresa {
+  color: var(--colorTextoUno);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Cuadro escuelas */
+
+.cuadro-educacion{
+  display: flex;
+  align-items: center;
+  background: #f4f1eb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.educacion-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+
+.educacion-contenido{
+  text-align: left;
+}
+
+.educacion-contenido .titulo-encargado {
+  color: var(--colorTextoUno);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.educacion-contenido .informacion-empresa {
+  color: var(--colorTextoUno);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Cuadro cursos */
+
+.cuadro-cursos{
+  width: 100%;
+  border-radius: 20px;
+  min-height: 120px;
+  overflow: hidden;
+  background-color: #a7a7a7;
+  display: flex;
+  justify-content: center;
+  /* align-items: center;*/
+  flex-direction: column;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.titulo-curso{
+  color: var(--colorTextoTres);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.descripcion-curso{
+  color: var(--colorTextoTres);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+/* Classes divisor  */
+
+.pacman-section {
+  position: relative;
+}
+
+#pacman {
+  position: absolute;
+  /* top: 50px; */ /* Ajusta según lo que prefieras */
+  width: 50px;
+  height: 50px;
+}
+
+/* .dot {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  top: 75px;
+} */
+
+#dots-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre los puntos */
+  position: absolute;
+  top: 10px; /* Debe alinearse con Pac-Man */
+  left: 0;
+  width: 100%;
+  padding: 0 20px; /* Padding opcional para evitar que los puntos se peguen a los bordes */
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
