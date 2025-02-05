@@ -14,6 +14,16 @@ body {
 }
 
 
+.home::-webkit-scrollbar {
+  width: 10px;     /* Tamaño del scroll en vertical */
+  height: 15px;    /* Tamaño del scroll en horizontal */
+}
+
+.home::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
 /* Variables css */
 :root {
 
@@ -42,9 +52,18 @@ body {
   --colorCincoRGB: 234, 193, 149;
 
   
-  --colorTextoUno: #0f132e;
-  --colorTextoDos: #000;
+  /* --colorTextoUno: #0f132e; */
+  --colorTextoUno: #2C3E50;
+  --colorTextoDos: #19274e;
   --colorTextoTres: #F4F8FB;
+
+  --colorEncabezado: #2C3E50;
+  --colorTextoEncabezado: #F5F5F5 ;
+
+  --colorFondoCardPrincipal: #F5F5F5 ;
+  --colorTextoCardPrincipal: #2C3E50 ;
+  --colorFondoCardSecundario: #2C3E50 ;
+  --colorTextoCardSecundario: #F5F5F5 ;
 }
 
 .icon-angular{
@@ -103,7 +122,10 @@ body {
 }
 
 .vista-icon-habilidades{
-  background-size: 24px 24px;
+  background-size: 30px 30px;
   background-position: center;
   background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
 }

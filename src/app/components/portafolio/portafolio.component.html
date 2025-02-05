@@ -1,7 +1,10 @@
   <header class="row m-0">
-    <div class="col-12 px-3 my-3">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="col-12 p-0">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary w-100" style="position: fixed; z-index: 1;">
         <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            
+          </a>
           <a class="navbar-brand" href="#acercaDeMi">{{ 'menu.acercaDe' | translate}}</a>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
@@ -16,9 +19,9 @@
     </div>
   </header>
   <section id="acercaDeMi">
-    <div class="container-xl">
+    <div class="container-xl" style="margin-top: 85px;">
       <div class="row" style="position: relative;">
-        <div class="col-5">
+        <div class="col-md-5 col-sm-6 col-12">
           <p class="titulo">
             {{ 'titulos.acercaDe' | translate}}
           </p>
@@ -28,16 +31,14 @@
           <p class="descripcion-titulo">{{ 'acercaDeMi.descripcion' | translate}}  
           </p>
         </div>
-        <div class="col-7" >
+        <div class="col-sm-6 col-12 d-md-none d-block p-0">
+          <img src="assets/img/fotouwu_4.png" class="foto-personal-secundario" alt="Foto de presentación" srcset="">
+        </div>
+        <div class="col-7 d-md-block d-none" >
           <img src="assets/img/8ae0d6ab-9b76-423d-ba21-5c3c48ca04c8 1.png" alt="" srcset="" style=" height: 100%; width: 100%; object-fit: none; object-position: top; border-radius: 20px;">
         </div>
-        <div class="col-12" style="position: absolute;">
-          <img src="assets/img/fotouwu_4.png" alt="" srcset="" style="object-fit: none;
-          max-height: 500px;
-          width: inherit;
-          /* object-position: top; */
-          object-position: 20vw -20px;
-          margin-top: -25px;">
+        <div class="col-12 d-md-block d-none" style="position: absolute;">
+          <img src="assets/img/fotouwu_4.png" class="foto-personal" alt="Foto de presentación" srcset="">
         </div>
       </div>
     </div>
@@ -87,7 +88,7 @@
                   {{ desarrollo.titulo | translate }}
                 </div>
                 <div class="row">
-                  <div class="col-sm-3 col-4 mt-2" *ngFor="let lenguaje of desarrollo.lenguajes">
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-4 mt-2 " *ngFor="let lenguaje of desarrollo.lenguajes">
                     <div class="cuadro-habilidad">
                       <mat-icon class="vista-icon-habilidades" [ngClass]="lenguaje.icono"></mat-icon>
                       <div class="titulo-habilidad">
@@ -103,7 +104,7 @@
             <div class="col-12 mt-3 titulo-secundario text-center">
               {{ 'titulos.habilidades' | translate }}
             </div>
-            <div class="col-md-4 col-6" *ngFor="let habilidades of listaHabilidades">
+            <div class="col-md-4 col-sm-6 col-12 px-sm-2 px-5" *ngFor="let habilidades of listaHabilidades">
               <div class="cuadro-habilidad blandas">
                 <div class="titulo-habilidad">
                   <i class="bi bi-filetype-html"></i>
@@ -128,7 +129,7 @@
         </div>
         <div class="col-12 mt-3">
           <div class="row m-0">
-            <div class="col-4" *ngFor="let proyecto of listaProyectos">
+            <div class="col-md-4 col-sm-6 col-12" *ngFor="let proyecto of listaProyectos">
               <div class="cuadro-proyecto position-relative overflow-hidden"
               data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Haz click para entrar al repositorio" (click)="detalleProyecto(proyecto)">
                 <img [src]="proyecto.fondo" [alt]="proyecto.titulo | translate" class="w-100">
@@ -159,7 +160,7 @@
         </div>
         <div class="col-12 mt-3">
           <div class="row">
-            <div class="col-sm-6 col-12 mb-3" *ngFor="let titulos of listaTitulos">
+            <div class="col-md-6 col-12 mb-3" *ngFor="let titulos of listaTitulos">
               <div class="cuadro-educacion">
                 <div class="educacion-logo">
                   <img [src]="titulos.logo" alt="Empresa 1">
@@ -176,7 +177,7 @@
             <div class="col-12 mt-3 titulo-secundario text-center">
               {{ 'titulos.cursos' | translate }}
             </div>
-            <div class="col-md-3 col-sm-4 col-6" *ngFor="let cursos of listaCursos">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-sm-2 px-5" *ngFor="let cursos of listaCursos">
               <div class="cuadro-cursos px-3 py-2">
                 <div class="titulo-curso d-flex justify-content-between">
                   {{ cursos.escuela | translate }}

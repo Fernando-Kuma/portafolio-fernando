@@ -1,32 +1,30 @@
 
-
-
-
-.home::-webkit-scrollbar {
-  width: 10px;     /* Tamaño del scroll en vertical */
-  height: 15px;    /* Tamaño del scroll en horizontal */
-}
-
-.home::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 4px;
-}
-
 .navbar{
-  background-color: #A7A7A7 !important;
+   /* background-color: #A7A7A7 !important; */
+  /* background-color: #6D5D4B !important; */
+  background-color: var(--colorEncabezado) !important;
   border-radius: 4px;
+  --bs-navbar-brand-color: var(--colorTextoEncabezado);
+  --bs-navbar-brand-hover-color: var(--colorTextoEncabezado);
+}
+
+.nav-link{
+  --bs-nav-link-color: var(--colorTextoEncabezado);
+  --bs-nav-link-hover-color: var(--colorTextoEncabezado);
 }
 
 .titulo{
   font-weight: 600;
   font-size: 40px;
   color: var(--colorTextoUno);
+  text-align: center;
 }
 
 .titulo-secundario{
   font-weight: 600;
   font-size: 24px;
   color: var(--colorTextoUno);
+  text-align: center;
 }
 
 .titulo-seccion{
@@ -41,7 +39,7 @@
   font-size: 18px;
   color: var(--colorTextoUno);
   white-space: break-spaces;
-  padding-right: 50px;
+  text-align: center;
 }
 
 
@@ -66,6 +64,23 @@
 
 .derecho-reservado{
   color: var(--colorTextoUno);
+}
+
+.foto-personal{
+  object-fit: none;
+  max-height: 500px;
+  width: inherit;
+  object-position: 20vw -20px;
+  margin-top: -25px;
+}
+
+.foto-personal-secundario{
+  object-fit: none;
+  height: 100%;
+  max-height: 500px;
+  /* object-position: -23vw -30px; */
+  object-position: center -20px;
+  width: 100%;
 }
 
 /* Classes proyectos  */
@@ -137,7 +152,8 @@
   border-radius: 20px;
   min-height: 80px;
   overflow: hidden;
-  background-color: #a7a7a7;
+  /* background-color: #a7a7a7; */
+  background-color: var(--colorFondoCardSecundario);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,14 +168,14 @@
 }
 
 .titulo-habilidad{
-  color: var(--colorTextoTres);
+  color: var(--colorTextoCardSecundario);
   font-size: 18px;
   font-weight: 600;
   text-align: center;
 }
 
 .descripcion-habilidad{
-  color: var(--colorTextoTres);
+  color: var(--colorTextoCardSecundario);
   font-size: 14px;
   font-weight: 400;
 }
@@ -169,18 +185,19 @@
   border-radius: 16px;
   min-height: 200px;
   overflow: hidden;
-  background-color: #f4f1eb;
+  /* background-color: #f4f1eb; */
+  background-color: var(--colorFondoCardPrincipal);
   cursor: default !important;
   box-shadow: none !important;
 }
 
 
 .cuadro-habilidad.blandas .titulo-habilidad{
-  color: var(--colorTextoUno);
+  color: var(--colorTextoCardPrincipal);
 }
 
 .cuadro-habilidad.blandas .descripcion-habilidad{
-  color: var(--colorTextoUno);
+  color: var(--colorTextoCardPrincipal);
 }
 
 
@@ -189,11 +206,14 @@
 .cuadro-experencia{
   display: flex;
   align-items: center;
-  background: #f4f1eb;
+  /* background: #f4f1eb; */
+  /* background-color: #D4C8B8; */
+  background-color: var(--colorFondoCardPrincipal);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  width: 60%;
+  /* width: 60%; */
+  width: 100%;
 }
 
 .experencia-logo img {
@@ -208,13 +228,13 @@
 }
 
 .experencia-contenido .titulo-encargado {
-  color: var(--colorTextoUno);
+  color: var(--colorTextoCardPrincipal);
   font-size: 22px;
   font-weight: 600;
 }
 
 .experencia-contenido .informacion-empresa {
-  color: var(--colorTextoUno);
+  color: var(--colorTextoCardPrincipal);
   font-size: 14px;
   font-weight: 400;
 }
@@ -224,7 +244,8 @@
 .cuadro-educacion{
   display: flex;
   align-items: center;
-  background: #f4f1eb;
+  /* background: #f4f1eb; */
+  background-color: var(--colorFondoCardPrincipal);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -243,13 +264,13 @@
 }
 
 .educacion-contenido .titulo-encargado {
-  color: var(--colorTextoUno);
+  color: var(--colorTextoCardPrincipal);
   font-size: 20px;
   font-weight: 600;
 }
 
 .educacion-contenido .informacion-empresa {
-  color: var(--colorTextoUno);
+  color: var(--colorTextoCardPrincipal);
   font-size: 14px;
   font-weight: 400;
 }
@@ -261,7 +282,8 @@
   border-radius: 20px;
   min-height: 120px;
   overflow: hidden;
-  background-color: #a7a7a7;
+  /* background-color: #a7a7a7; */
+  background-color: var(--colorFondoCardSecundario);
   display: flex;
   justify-content: center;
   /* align-items: center;*/
@@ -270,13 +292,13 @@
 }
 
 .titulo-curso{
-  color: var(--colorTextoTres);
+  color: var(--colorTextoCardSecundario);
   font-size: 24px;
   font-weight: 600;
 }
 
 .descripcion-curso{
-  color: var(--colorTextoTres);
+  color: var(--colorTextoCardSecundario);
   font-size: 20px;
   font-weight: 400;
 }
@@ -320,4 +342,31 @@
   height: 30px;
   background-color: white;
   border-radius: 50%;
+}
+
+
+
+@media (min-width: 576px) {
+  .foto-personal-secundario{
+    object-fit: none;
+    height: 100%;
+    max-height: 500px;
+    object-position: -25vw -30px;
+    width: 100%;
+  }
+
+  .cuadro-experencia{
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cuadro-experencia{
+    width: 65%;
+  }
+
+  .descripcion-titulo{
+    padding-right: 50px;
+    text-align: start;
+  }
 }
