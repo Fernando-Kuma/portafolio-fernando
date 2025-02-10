@@ -121,11 +121,44 @@ body {
   background-image: url("src\assets\img\icon-mongodb.svg");
 }
 
+.icon-mongodb{
+  background-image: url("src\assets\img\icon-mongodb.svg");
+}
+
+.icon-team{
+  background-image: url("src\assets\img\team.svg");
+}
+
+.icon-adap{
+  background-image: url("src\assets\img\computer-and-people.svg");
+}
+
+.icon-creat{
+  background-image: url("src\assets\img\creativity.svg");
+}
+
+.icon-habilidades{
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 30px;
+  min-height: 30px;
+}
+
 .vista-icon-habilidades{
   background-size: 30px 30px;
   background-position: center;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.vista-icon-cursos{
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 30px;
+  min-height: 30px;
   filter: brightness(0) invert(1);
 }

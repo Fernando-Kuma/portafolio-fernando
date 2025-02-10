@@ -4,7 +4,8 @@
     "proyectos": "Proyectos",
     "herramientras": "Herramientas",
     "experiencia": "Experiencia",
-    "educacion": "Educación"
+    "educacion": "Educación",
+    "cv": "Descargar CV"
   },
   "acercaDeMi":{
     "desarrollador": "Desarrollador FrontEnd",
@@ -35,38 +36,47 @@
         "lenguajes": [
           {
             "titulo": "HTML",
+            "nivel": "true",
             "icono": "icon-html",
             "descripcion": ""
           },{
             "titulo": "CSS3",
+            "nivel": "true",
             "icono": "icon-css3",
             "descripcion": ""
           },{
             "titulo": "JavaScript",
+            "nivel": "true",
             "icono": "icon-javascript",
             "descripcion": ""
           },{
             "titulo": "Angular",
+            "nivel": "true",
             "icono": "icon-angular",
             "descripcion": ""
           },{
             "titulo": "React",
+            "nivel": "false",
             "icono": "icon-react",
             "descripcion": ""
           },{
             "titulo": "Laravel",
+            "nivel": "true",
             "icono": "icon-laravel",
             "descripcion": ""
           },{
             "titulo": "Material Angular",
+            "nivel": "true",
             "icono": "icon-angular",
             "descripcion": ""
           },{
             "titulo": "ChartJS",
+            "nivel": "true",
             "icono": "icon-chartjs",
             "descripcion": ""
           },{
             "titulo": "Bootstrap",
+            "nivel": "true",
             "icono": "icon-bootstrap",
             "descripcion": ""
           }
@@ -76,27 +86,28 @@
         "lenguajes": [
           {
             "titulo": "MySQL",
+            "nivel": "true",
             "icono": "icon-mysql",
             "descripcion": ""
           },{
             "titulo": "MongoDB",
+            "nivel": "false",
             "icono": "icon-mongodb",
             "descripcion": ""
           },{
             "titulo": "PHP",
+            "nivel": "true",
             "icono": "icon-php",
             "descripcion": ""
           },{
             "titulo": "NodeJS",
+            "nivel": "false",
             "icono": "icon-nodejs",
             "descripcion": ""
           },{
             "titulo": "NestJS",
+            "nivel": "false",
             "icono": "icon-netsjs",
-            "descripcion": ""
-          },{
-            "titulo": "Spring Boot",
-            "icono": "icon-spring",
             "descripcion": ""
           }
         ]
@@ -105,18 +116,22 @@
         "lenguajes": [
           {
             "titulo": "GitHub",
+            "nivel": "false",
             "icono": "icon-git",
             "descripcion": ""
           },{
             "titulo": "Figma",
+            "nivel": "true",
             "icono": "icon-figma",
             "descripcion": ""
           },{
             "titulo": "Trello",
+            "nivel": "true",
             "icono": "icon-trello",
             "descripcion": ""
           },{
             "titulo": "Excel",
+            "nivel": "true",
             "icono": "icon-excel",
             "descripcion": ""
           }
@@ -125,9 +140,20 @@
     ],
     "habilidades":[
       {
-        "titulo": "",
-        "icono": "",
-        "descripcion": ""
+        "titulo": "Adaptabilidad",
+        "icono": "icon-adap",
+        "background": "#B1C0A5",
+        "descripcion": "En el mundo del desarrollo web, la tecnología avanza rápidamente y estar preparado para el cambio es clave. Me considero altamente adaptable, con la capacidad de aprender rápidamente nuevas tecnologías y ajustarme a distintos entornos de trabajo. Mi experiencia en el desarrollo con diferentes frameworks y en la resolución de problemas complejos me ha enseñado a enfrentar desafíos con una mentalidad abierta y flexible."
+      },{
+        "titulo": "Trabajo en Equipo",
+        "icono": "icon-team",
+        "background": "#F4EDE5",
+        "descripcion": "Para mí, un buen equipo es donde todos sumamos. No se trata solo de hacer tu parte, sino de asegurarse de que el trabajo fluya sin problemas. Me gusta aportar ideas, ayudar cuando alguien lo necesita y mantenerme alineado con el equipo para que cada quien tenga claro qué hacer y cuándo. Sé que el tiempo es valioso, así que procuro que las tareas estén bien organizadas y que no perdamos el rumbo en el camino."
+      },{
+        "titulo": "Creatividad",
+        "icono": "icon-creat",
+        "background": "#C5AFA0",
+        "descripcion": "El desarrollo web no solo se trata de código, sino también de encontrar soluciones innovadoras y efectivas. Mi enfoque creativo me permite diseñar interfaces atractivas y funcionales, optimizando la experiencia del usuario. Desde la maquetación hasta la implementación de funcionalidades, busco siempre un equilibrio entre estética y rendimiento, asegurando que cada proyecto tenga un impacto positivo."
       }
     ]
   },
@@ -143,7 +169,7 @@
       "logo": "assets/img/logo-gepyx.jpeg",
       "encargo": "Frontend Developer",
       "empresa": "GE PYXIS, S. de R.L. de C.V",
-      "fecha": "202o - 2022",
+      "fecha": "2020 - 2022",
       "tareas": "Becario administrativo, desarrollador de sitios web con php",
       "descripcion": "Desarrollo de aplicaciones web con Angular, TypeScript y SCSS."
     },{
@@ -171,11 +197,28 @@
     ],
     "certificaciones":[
       {
-        "logo": "",
+        "logo": "icon-php",
         "escuela": "Udemy",
-        "titulo": "Angular",
-        "fecha": ""
+        "titulo": "CRUD con PHP, MySQL y JS en el Modelo MVC",
+        "doc": "php-01.pdf"
+      },{
+        "logo": "icon-laravel",
+        "escuela": "Udemy",
+        "titulo": "Creación de WebService API REST con Laravel",
+        "doc": "laravel-01.pdf"
+      },{
+        "logo": "icon-html",
+        "escuela": "Udemy",
+        "titulo": "Curso de Introducción al Desarrollo Web: HTML y CSS (1/2)",
+        "doc": ""
+      },{
+        "logo": "icon-html",
+        "escuela": "Google Actívate",
+        "titulo": "Curso de Introducción al Desarrollo Web: HTML y CSS (1/2)",
+        "doc": ""
       }
+
+      
     ]
   }
 }

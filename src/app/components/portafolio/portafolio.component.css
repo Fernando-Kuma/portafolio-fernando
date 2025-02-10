@@ -44,22 +44,10 @@
 
 
 
-.articulo-2{
+.pie-de-pagina{
   width: 100%;
   min-height: 100px;
   background-color: var(--colorTextoUno);
-}
-
-.articulo-2 h1{
-  color: var(--colorTextoUno);
-  font-size: 35px;
-  font-weight: 700;
-}
-
-.articulo-2 p{
-  color: var(--colorTextoUno);
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .derecho-reservado{
@@ -164,7 +152,14 @@
 .cuadro-habilidad:hover{
   box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
   cursor: pointer;
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.punto-nivel{
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
 }
 
 .titulo-habilidad{
@@ -185,6 +180,7 @@
   border-radius: 16px;
   min-height: 200px;
   overflow: hidden;
+
   /* background-color: #f4f1eb; */
   background-color: var(--colorFondoCardPrincipal);
   cursor: default !important;
@@ -291,15 +287,21 @@
   transition: box-shadow 0.3s ease-in-out;
 }
 
+.cuadro-cursos:hover{
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 .titulo-curso{
   color: var(--colorTextoCardSecundario);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .descripcion-curso{
   color: var(--colorTextoCardSecundario);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -344,7 +346,19 @@
   border-radius: 50%;
 }
 
+.texto-pie{
+  color: var(--colorTextoEncabezado);
+  font-size: 18px;
+  font-weight: 400;
+}
 
+.contacto-hiper{
+  color: var(--colorTextoEncabezado);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
 
 @media (min-width: 576px) {
   .foto-personal-secundario{

@@ -16,6 +16,9 @@ export class PortafolioComponent {
   listaCursos: any[] = [];
   lista: any[] = [];
 
+  correo: 'mailto:fernando998@outlook.es?Subject=Saludos&body=Buen día...'
+  anioActual: any = new Date().getFullYear();
+
   constructor(private translate: TranslateService) {
     this.translate.get('proyectos').subscribe((data) => {
       this.listaProyectos = data;
@@ -37,6 +40,15 @@ export class PortafolioComponent {
 
   detalleProyecto(proyecto: any){
 
+  }
+
+  contactoCorreo(){
+    window.location.href = this.correo
+  }
+
+  abrirCurso(doc: string){
+    const pdfUrl = 'assets/docs/'+doc;
+    window.open(pdfUrl, '_blank');
   }
 
 }

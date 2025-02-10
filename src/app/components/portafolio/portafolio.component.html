@@ -1,4 +1,4 @@
-  <header class="row m-0">
+  <header id="acercaDeMi" class="row m-0">
     <div class="col-12 p-0">
       <nav class="navbar navbar-expand-lg bg-body-tertiary w-100" style="position: fixed; z-index: 1;">
         <div class="container-fluid">
@@ -10,8 +10,9 @@
             <div class="navbar-nav">
               <a class="nav-link" href="#experiencia">{{ 'menu.experiencia' | translate}}</a>
               <a class="nav-link" href="#herramientas">{{ 'menu.herramientras' | translate}}</a>
-              <a class="nav-link" href="#proyectos">{{ 'menu.proyectos' | translate}}</a>
+              <!-- <a class="nav-link" href="#proyectos">{{ 'menu.proyectos' | translate}}</a> -->
               <a class="nav-link" href="#educacion">{{ 'menu.educacion' | translate}}</a>
+              <a class="nav-link" href="assets/docs/Fernando_Galindo_CV.pdf" download="Fernando_Galindo_CV.pdf" target="_blank">{{ 'menu.cv' | translate}}</a>
             </div>
           </div>
         </div>
@@ -89,9 +90,12 @@
                 </div>
                 <div class="row">
                   <div class="col-lg-3 col-md-4 col-sm-6 col-4 mt-2 " *ngFor="let lenguaje of desarrollo.lenguajes">
-                    <div class="cuadro-habilidad">
-                      <mat-icon class="vista-icon-habilidades" [ngClass]="lenguaje.icono"></mat-icon>
-                      <div class="titulo-habilidad">
+                    <div class="cuadro-habilidad" [matTooltip]="lenguaje.nivel == 'true' ? 'Experiencia trabajando con '+lenguaje.titulo : 'Conocimientos Básico en '+lenguaje.titulo" matTooltipPosition="above">
+                      <div class="d-flex justify-content-center align-items-center w-100">
+                        <mat-icon class="vista-icon-habilidades" [ngClass]="lenguaje.icono"></mat-icon>
+                        <div class="punto-nivel ms-2" [ngStyle]="{'background-color': lenguaje.nivel == 'true' ? '#27AE60' : '#E67E22'}"></div>
+                      </div>
+                      <div class="titulo-habilidad mt-1">
                         {{ lenguaje.titulo | translate }}
                       </div>
                     </div>
@@ -105,46 +109,15 @@
               {{ 'titulos.habilidades' | translate }}
             </div>
             <div class="col-md-4 col-sm-6 col-12 px-sm-2 px-5" *ngFor="let habilidades of listaHabilidades">
-              <div class="cuadro-habilidad blandas">
-                <div class="titulo-habilidad">
-                  <i class="bi bi-filetype-html"></i>
+              <div class="cuadro-habilidad blandas py-2 px-3" [ngStyle]="{'background-color': habilidades.background}">
+                <div class="titulo-habilidad d-flex align-items-center w-100 justify-content-between">
                   {{ habilidades.titulo | translate }}
+                  <mat-icon class="icon-habilidades" [ngClass]="habilidades.icono"></mat-icon>
                 </div>
-                <div class="descripcion-habilidad">
+                <div class="descripcion-habilidad mt-2">
                   {{ habilidades.descripcion | translate }}
                 </div>
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="proyectos">
-    <div class="container-xl mt-2">
-      <div class="row">
-        <div class="col-12 titulo-seccion">
-          {{ 'titulos.proyectos' | translate}}
-        </div>
-        <div class="col-12 mt-3">
-          <div class="row m-0">
-            <div class="col-md-4 col-sm-6 col-12" *ngFor="let proyecto of listaProyectos">
-              <div class="cuadro-proyecto position-relative overflow-hidden"
-              data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Haz click para entrar al repositorio" (click)="detalleProyecto(proyecto)">
-                <img [src]="proyecto.fondo" [alt]="proyecto.titulo | translate" class="w-100">
-                <div class="informacion-proyecto position-absolute p-3">
-                  <p class="titulo-proyecto">
-                    <i class="bi bi-github"></i>
-                    {{ proyecto.titulo | translate}}
-                  </p>
-                  <p class="descripcion-proyecto">
-                    {{ proyecto.descripcion | translate}}
-                  </p>
-                  <div class="etiquetas-proyectos d-flex gap-2">
-                    <span class="etiqueta" *ngFor="let etiqueta of proyecto.etiquetas">{{etiqueta}}</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -178,10 +151,10 @@
               {{ 'titulos.cursos' | translate }}
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 p-sm-2 px-5" *ngFor="let cursos of listaCursos">
-              <div class="cuadro-cursos px-3 py-2">
+              <div class="cuadro-cursos px-3 py-2" (click)="abrirCurso(cursos.doc)" >
                 <div class="titulo-curso d-flex justify-content-between">
                   {{ cursos.escuela | translate }}
-                  <i class="bi bi-filetype-html"></i>
+                  <mat-icon class="vista-icon-cursos" [ngClass]="cursos.logo"></mat-icon>
                 </div>
                 <div class="descripcion-curso text-center mt-3">
                   {{ cursos.titulo | translate }}
@@ -197,15 +170,26 @@
   
 
 
-  <footer class="articulo-2 py-4 mt-4">
+  <footer class="pie-de-pagina py-4 mt-4">
     <div class="container-xl">
-      <p class="float-end mb-1">
-        <a href="#header">Inicio</a>
-      </p>
-      <div class="d-flex justify-content-start mb-3">
-        <p class="me-3 mb-1"><i class="fa-brands fa-github"></i><a class="btn btn-link" href="https://github.com/Fernando-Kuma" target="_blank">Perfil GitHub</a></p>
-        <p class="mb-1"><i class="fa-brands fa-linkedin"></i><a class="btn btn-link" href="https://www.linkedin.com/in/fernando-enrique-galindo-jimenez-15677b234" target="_blank">Perfil Linkedin</a></p>
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-12">
+          <div class="contactos texto-pie">
+            Contactos
+          </div>
+          <div class="lista-contactos">
+            <ul class="list-unstyled">
+              <li class="contacto-hiper" href="https://www.linkedin.com/in/fernando-enrique-galindo-jimenez-15677b234" target="_blank">Perfil GitHub</li>
+              <li class="contacto-hiper" href="https://github.com/Fernando-Kuma" target="_blank">Perfil Linkedin</li>
+              <li class="contacto-hiper" (click)="contactoCorreo()">Enviar correo</li>
+              <!-- <li class="contacto-hiper" href="https://www.linkedin.com/in/fernando-enrique-galindo-jimenez-15677b234" target="_blank"></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 text-end">
+          <p class="contacto-hiper" href="#acercaDeMi">Inicio</p>
+          <p class="texto-pie">© Fernando Galindo -  {{anioActual}}</p>
+        </div>
       </div>
-      <p class="derecho-reservado">© Fernando Galindo -  <script>document.write(new Date().getFullYear());</script></p>
     </div>
   </footer>

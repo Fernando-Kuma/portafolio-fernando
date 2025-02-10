@@ -8,50 +8,121 @@
   },
   "acercaDeMi":{
     "desarrollador": "Desarrollador FrontEnd",
-    "descripcion": "Desarrollador Frontend con más de 2 años de experiencia especializada en Angular, creando aplicaciones web innovadoras con un enfoque en experiencias de usuario excepcionales. Dominio en HTML5, CSS3, JavaScript, TypeScript y frameworks modernos. "
+    "descripcion": "Desarrollador Frontend con más de 2 años de experiencia especializada en Angular, creando aplicaciones web innovadoras con un enfoque en experiencias de usuario excepcionales. Me apasiona transformar ideas en interfaces atractivas, funcionales y de alto rendimiento. \nDestaco por mi creatividad, proactividad y compromiso con la excelencia en cada línea de código."
   },
   "titulos":{
     "acercaDe": "Acerca de mi",
     "proyectos": "Proyectos",
     "herramientas": "Herramientas",
     "experiencia": "Experiencia",
-    "educacion": "Educación"
+    "educacion": "Educación",
+    "habilidades": "Habilidades blandas",
+    "cursos": "Cursos"
   },
   "proyectos": [
     {
       "titulo": "Proyecto X",
       "descripcion": "Aquí tienes una escala de colores que incluye las variantes desde claro a oscuro para las opciones primarias, secundarias, de éxito, advertencia y error. Para cada uno, te proporciono 5 tonos, desde el más claro hasta el más oscuro.",
-      "fondo": "assets/img/proyecto-x.png",
+      "fondo": "assets/img/ejemplo-proyecto.png",
       "etiquetas": ["HTML", "CSS"],
       "link": ""
     }
   ],
   "herramientas": {
-    "lenguajes": {
-      "front": {
-        "titulo": "",
+    "desarrollo": [
+      {
+        "titulo": "Front-End",
         "lenguajes": [
           {
-            "titulo": "",
-            "icono": "",
+            "titulo": "HTML",
+            "icono": "icon-html",
             "descripcion": ""
-          },
-          {
-            "titulo": "",
-            "icono": "",
+          },{
+            "titulo": "CSS3",
+            "icono": "icon-css3",
+            "descripcion": ""
+          },{
+            "titulo": "JavaScript",
+            "icono": "icon-javascript",
+            "descripcion": ""
+          },{
+            "titulo": "Angular",
+            "icono": "icon-angular",
+            "descripcion": ""
+          },{
+            "titulo": "React",
+            "icono": "icon-react",
+            "descripcion": ""
+          },{
+            "titulo": "Laravel",
+            "icono": "icon-laravel",
+            "descripcion": ""
+          },{
+            "titulo": "Material Angular",
+            "icono": "icon-angular",
+            "descripcion": ""
+          },{
+            "titulo": "ChartJS",
+            "icono": "icon-chartjs",
+            "descripcion": ""
+          },{
+            "titulo": "Bootstrap",
+            "icono": "icon-bootstrap",
             "descripcion": ""
           }
         ]
-      },
-      "back": {
-        "titulo": "",
-        "lenguajes": []
-      },
-      "extras": {
-        "titulo": "",
-        "lenguajes": []
+      },{
+        "titulo": "Back-End",
+        "lenguajes": [
+          {
+            "titulo": "MySQL",
+            "icono": "icon-mysql",
+            "descripcion": ""
+          },{
+            "titulo": "MongoDB",
+            "icono": "icon-mongodb",
+            "descripcion": ""
+          },{
+            "titulo": "PHP",
+            "icono": "icon-php",
+            "descripcion": ""
+          },{
+            "titulo": "NodeJS",
+            "icono": "icon-nodejs",
+            "descripcion": ""
+          },{
+            "titulo": "NestJS",
+            "icono": "icon-netsjs",
+            "descripcion": ""
+          },{
+            "titulo": "Spring Boot",
+            "icono": "icon-spring",
+            "descripcion": ""
+          }
+        ]
+      },{
+        "titulo": "Extras",
+        "lenguajes": [
+          {
+            "titulo": "GitHub",
+            "icono": "icon-git",
+            "descripcion": ""
+          },{
+            "titulo": "Figma",
+            "icono": "icon-figma",
+            "descripcion": ""
+          },{
+            "titulo": "Trello",
+            "icono": "icon-trello",
+            "descripcion": ""
+          },{
+            "titulo": "Excel",
+            "icono": "icon-excel",
+            "descripcion": ""
+          }
+        ]
       }
-    },
+    ],
     "habilidades":[
       {
         "titulo": "",
@@ -62,30 +133,66 @@
   },
   "experiencia":[
     {
-      "logo": "",
-      "encargo": "",
-      "empresa": "",
-      "fecha": "",
-      "tareas": "",
-      "descripcion": ""
+      "logo": "assets/img/logo-biller.jpeg",
+      "encargo": "Frontend Developer",
+      "empresa": "BillerTicket",
+      "fecha": "2022 - Actual",
+      "tareas": "Desarrollo de aplicaciones web con Angular",
+      "descripcion": "Desarrollo de aplicaciones web con Angular, TypeScript y SCSS."
+    },{
+      "logo": "assets/img/logo-gepyx.jpeg",
+      "encargo": "Frontend Developer",
+      "empresa": "GE PYXIS, S. de R.L. de C.V",
+      "fecha": "202o - 2022",
+      "tareas": "Becario administrativo, desarrollador de sitios web con php",
+      "descripcion": "Desarrollo de aplicaciones web con Angular, TypeScript y SCSS."
+    },{
+      "logo": "assets/img/empresa-x.png",
+      "encargo": "Practicas",
+      "empresa": "Muller Lewis S.A de C.V.",
+      "fecha": "2022 - 2022",
+      "tareas": "Practicante de desarrollo web donde apliqué mis conocimientos de LAMP",
+      "descripcion": "Desarrollo de aplicaciones web con Angular, TypeScript y SCSS."
     }
   ],
   "educacion": {
     "escuela":[
       {
-        "logo": "",
-        "escuela": "",
-        "titulo": "",
-        "fecha": ""
+        "logo": "assets/img/logo-utn - copia.png",
+        "escuela": "Universidad tecnológica Nezahualcóyotl",
+        "titulo": "TSU. Desarrollo de software en multiplataforma",
+        "fecha": "2020 - 2022"
+      },{
+        "logo": "assets/img/logo-conalep.png",
+        "escuela": "Conalep Nezahualcoyotl III",
+        "titulo": "Técnico en Informática",
+        "fecha": "2013 - 2015"
       }
     ],
     "certificaciones":[
       {
-        "logo": "",
-        "escuela": "",
-        "titulo": "",
-        "fecha": ""
+        "logo": "icon-php",
+        "escuela": "Udemy",
+        "titulo": "CRUD con PHP, MySQL y JS en el Modelo MVC",
+        "doc": "php-01.pdf"
+      },{
+        "logo": "icon-laravel",
+        "escuela": "Udemy",
+        "titulo": "Creación de WebService API REST con Laravel",
+        "doc": "laravel-01.pdf"
+      },{
+        "logo": "icon-html",
+        "escuela": "Udemy",
+        "titulo": "Curso de Introducción al Desarrollo Web: HTML y CSS (1/2)",
+        "doc": ""
+      },{
+        "logo": "icon-html",
+        "escuela": "Google Actívate",
+        "titulo": "Curso de Introducción al Desarrollo Web: HTML y CSS (1/2)",
+        "doc": ""
       }
+
+      
     ]
   }
 }
